@@ -6,14 +6,13 @@ def parser(text):
     periodos = {}
     obras_por_periodo = {}
 
-    # Remove newlines followed by whitespace
     text = re.sub(r'\n\s+', ' ', text)
     linhas = text.split("\n")
 
     for linha in linhas:
         campos = re.split(r';(?=(?:[^"]*"[^"]*")*[^"]*$)', linha)
         print(campos)
-        if len(campos) > 1:  # Ignorar linhas vazias
+        if len(campos) > 1:
             compositores.add(campos[4])
             periodo = campos[3]
             if periodo in periodos:
