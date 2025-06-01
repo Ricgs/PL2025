@@ -1,0 +1,14 @@
+# Ficheiros de saída do compilador
+*.out
+
+# Ficheiro gerado pelo PLY
+parsetab.py
+
+# Bytecode compilado do Python
+*.pyc
+__pycache__/
+
+# Ficheiros temporários do sistema
+*.swp
+*.swo
+.DS_Store
